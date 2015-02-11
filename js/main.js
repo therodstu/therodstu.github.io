@@ -54,6 +54,12 @@ $(".videoWrapper, .videoWrapper iframe").hide();
 $(".log-in").show();
 $(".about-us, .contacts, .testimony").hide();
      });
+     
+     ///////////////pause video when text link clicked
+     $(".nav-link-top").bind('click', function() {
+            var player=$f(document.getElementById('vidplayer'));
+          player.api('pause');
+     });
 
 
 ////hide text pages when video button is clicked
