@@ -1,0 +1,406 @@
+/*do this stuff when screen is smaller than 768*/
+@media screen and (max-width:767px) {
+   
+    .container-div-top, .logo-wrapper-desktop, .logo, .text-page{
+    display:none !important;
+    }
+/*    .collapsible-menu, .collapsible-videos, display none?*/
+    
+
+    .container-div-bottom{
+    padding-left: 7% !important;
+    padding-right:7% !important;
+    }
+    
+}
+
+/*do this stuff when screen is bigger than 768*/
+
+@media screen and (min-width:768px) {
+.relative-div
+    {
+display:none;
+}
+    .collapsible-menu, .menu-list, .collapsible-videos, .videos-list,.text-page-mobile{
+    display:none;
+    }
+    .log-in-mobile-div, .contacts-mobile-div, .testimony-mobile-div, .about-us-mobile-div{
+    display:none !important;
+    }
+
+
+}
+
+
+/*make nav text smaller when screen between 900px and 768px*/
+@media screen and (max-width:900px) {
+.nav-link-bottom li{
+font-size: 13px !important;
+}
+.nav-link-top li{
+font-size:12px;
+}
+}
+
+
+
+
+
+.videos-list{
+padding-left:73%;
+list-style: none;
+}
+.videos-list li{
+
+}
+.videos-list a{
+    color:black;
+    font-family:arial;
+    
+    display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+}
+.videos-list a:hover{
+    transform: skew(-20deg);
+    text-decoration: none;
+    font-color:black;
+    font-family:arial;
+    font-weight: bold;
+    
+}
+
+
+
+.menu-list{
+padding-left:50%;
+list-style: none;
+}
+.menu-list li{
+;
+}
+
+.menu-list btn{
+ color:black;
+    font-family:arial;
+    
+    display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+}
+.menu-list btn:hover{
+     transform: skew(-20deg);
+    text-decoration: none;
+    font-color:black;
+    font-family:arial;
+    font-weight: bold;
+}
+
+
+body{
+overflow: hidden;
+}
+
+.container-div-top{
+position:relative;
+width:100%;
+/*height:86px;*/
+ height:92px;
+
+    
+}
+
+.logo-wrapper-desktop{
+
+	padding: 50px 0px 0px 50px
+	;
+
+}
+
+.logo{
+min-height: 43px;
+width : 180px;
+display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+	position: absolute;
+	top: 0;
+	
+	left: -185px;
+}
+
+.logo:hover{
+transform: skew(-13deg);
+}
+
+
+
+.top-nav-row{
+position:absolute;
+top:48px;
+    
+margin-right:14%;
+margin-left:14%;
+/*height:18px;*/
+    height:20px;
+width:72%;
+background-color: black;
+font-color:white;
+}
+
+.top-nav-links ul{
+margin-bottom: 0;
+margin-top: 0;
+}
+.top-nav-links-ul li{
+display:inline-block;
+/*padding-left:5%;*/
+float:right;
+	position: relative;
+	top: -50px;
+}
+
+.nav-link-top{
+color:white;
+font-family: Arial;
+float:right;
+
+    display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+}
+.nav-link-top:hover{
+text-decoration: none;
+font-weight:bold;
+    transform: skew(-20deg);
+}
+
+
+
+.bottom-nav-row{
+position:absolute;
+top:68px;
+    
+margin-right:14%;
+margin-left:14%;
+/*height:18px;*/
+ height:22px;
+width:72%;
+background-color: white;
+font-color:black;
+}
+.bottom-nav-links ul{
+margin-bottom: 0;
+margin-top:0;
+}
+.bottom-nav-links-ul li{
+display:inline-block;
+/*padding-left:4%;*/
+/*padding-left:30px;*/
+/*    applied on individual items*/
+/*padding-right:1%;*/
+float:right;
+
+}
+
+
+/*use these to align nav bar links  ///////////////////////////////////////////////////////////////*/
+
+
+.nlt-about-us{
+ padding-right:66px;
+
+}
+.nlt-testimony{
+     padding-right:69px;
+}
+.nlt-contacts{
+    padding-right:70px;
+}
+.nlt-log-in{
+padding-right:5px;
+}
+
+
+
+.nlb-energetic{
+ padding-right:49px;
+}
+.nlb-motion{
+ padding-right:44px;
+}
+.nlb-internal{
+ padding-right:35px;
+}
+.nlb-cinematic{
+padding-right:5px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+a.nav-link-bottom{
+color:black;
+font-family: Arial;
+font-size: 16px;
+float:right;
+    display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+  
+
+}
+a.nav-link-bottom:hover{
+text-decoration: none;
+font-weight: bold;
+    transform: skew(-20deg);
+}
+
+
+.container-div-bottom{
+padding-left:14%;
+padding-right:14%;
+
+}
+
+
+.videoWrapper {
+/*    margin-top: 20px;*/
+	position: relative;
+	padding-bottom: 56.25%;  
+	padding-top: 0px;
+	height: 0;
+    overflow: hidden;
+    border: 3px solid black;
+
+    
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.copyright{
+font-family: Arial;
+font-size:10px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+.relative-div{
+position:relative;
+width:100%;
+height:auto;
+padding-bottom: 50px;
+}
+.absolute-logo{
+min-height: 22px;
+width:90px;
+
+
+}
+
+.absolute-logo-wrapper{
+
+/*height:auto;*/
+display:inline-block;
+position: absolute;
+/*top:20px;*/
+bottom:3px;
+left:0;
+
+    
+    display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+	transform-origin: 0 100%;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+    
+}
+
+.absolute-logo-wrapper:hover{
+transform: skew(-20deg);
+}
+
+
+.btn-menu{
+    display:inline-block;
+    position:absolute;
+    top:20px;
+    left:50%;
+    width:20%;
+    
+}
+.btn-videos{
+display:inline-block;
+position:absolute;
+top:20px;
+right:7%;
+width:20%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
